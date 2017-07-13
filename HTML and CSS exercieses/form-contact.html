@@ -3,15 +3,30 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Contact Form</title>
   </head>
   <body>
     <h1>Contact us</h1>
     <form>
-      <span>First name: </span><input type="text" name="firstName" value=""><br>
-      <span>Last name: </span> <input type="text" name="lastName" value=""><br>
-      <span>Email: </span> <input type="text" name="email" value=""><br>
-      <span>Town:</span <input type="checkbox" name="town" value="Varna"><br>
+        <div>
+            <span>First name:  </span><input type="text" name="firstName" value="">
+        </div>
+        <div>
+            <span>Last name: </span> <input type="text" name="lastName" value="">
+        </div>
+        <div>
+            <span>Email: </span> <input type="text" name="email" value="">
+        </div>
+        <div>
+      <span>Town:</span>
+        <select name="town">
+            <option value="sofia">Sofia</option>
+            <option value="varna">Varna</option>
+            <option value="plovdiv">Plovdiv</option>
+            <option value="burgas">Burgas</option>
+        </select>
+        </div>
         <input type="submit" name="" value="Submit">
 
     </form>
