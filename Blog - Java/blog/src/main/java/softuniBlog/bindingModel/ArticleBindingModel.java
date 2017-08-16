@@ -6,13 +6,12 @@ public class ArticleBindingModel {
     private String title;
     private String content;
 
-    public ArticleBindingModel(String title) {
-
-    }
-
     public ArticleBindingModel(String title, String content) {
         this.title = title;
         this.content = content;
+    }
+
+    public ArticleBindingModel() {
     }
 
     @NotNull

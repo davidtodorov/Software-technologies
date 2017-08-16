@@ -60,5 +60,11 @@ public class Article {
     public void setAuthor(User author) {
         this.author = author;
     }
+
+    @Transient
+    public String getSummary(){
+        int endIndex = this.getContent().length()/2;
+        return this.getContent().substring(0, endIndex) + "...";
+    }
 }
 
